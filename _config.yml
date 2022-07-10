@@ -21,7 +21,7 @@ timezone: Europe/Moscow
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # ↓ --------------------------
 
-title: Huỳnh Tấn Cường                           # the main title
+title: Huynh Tan Cuong                           # the main title
 
 tagline: A Passionate Embedded Developver   # it will display as the sub-title
 
@@ -40,7 +40,7 @@ twitter:
 social:
   # Change to your full name.
   # It will be displayed as the default author of the posts and the copyright owner in the Footer
-  name: Huỳnh Tấn Cường
+  name: Huynh Tan Cuong
   email: huynhtancuongrus@gmail.com             # change to your email address
   links:
     # The first element serves as the copyright owner's link
