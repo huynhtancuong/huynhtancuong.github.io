@@ -9,8 +9,8 @@ mermaid: true
 img_path: /assets/img/posts/olimp-can-module/
 image: 
     path: my-custom-can-node-front.jpg
-    width: 400
-    height: 400
+    width: 320
+    height: 165
     alt: My own custom CAN node
 ---
 
@@ -18,13 +18,13 @@ In this post, I'm going to show you about my CAN module and short explanation ab
 
 ## Problem of Automobile's development
 
-A long time a go, in the automobile intrustry, people start to make smarter car with more and more features. A long with that, the car must contain more electrical components, that lead to the result that there are more and more wires in the car so as to connect these electrical components together. The more wire, the more complicated structure, the harder for worker to detect and repair the car if there are problems.
+A long time a go, in the automobile industry, people start to make smarter cars with more and more features. A long with that, the car must contain more electrical components, that lead to the result that there are more and more wires in the car to connect these electrical components together. The more wire, the more complicated structure, the harder for the worker to detect and repair the car if there are any problems.
 
 To fix this problem, in 1983, a company named Bosch started to develop CAN bus. Which allow an easier communication protocol between electrical components.
 
 ## What is CAN bus? 
 
-A **Controller Area Network (CAN bus)** is a robust vehicle bus standard designed to allow microcontrollers and devices to communicate with each other's applications without a host computer. It is a message-based protocol, designed originally for multiplex electrical wiring within automobiles to save on copper, but it can also be used in many other contexts. For each device, the date in a frame is transmitted serially but in such a way that if more than one device transmits at the same time, the highest priority device can continue while the other back off. Frames are received by all devices, including by the transmitting device.
+A **Controller Area Network (CAN bus)** is a robust vehicle bus standard designed to allow microcontrollers and devices to communicate with each other's applications without a host computer. It is a message-based protocol, designed originally to multiplex electrical wiring within automobiles to save on copper, but it can also be used in many other contexts. For each device, the date in a frame is transmitted serially but in such a way that if more than one device transmits at the same time, the highest priority device can continue while the other back off. Frames are received by all devices, including by the transmitting device.
 
 ### Versions of CAN bus
 
@@ -61,12 +61,12 @@ A **Controller Area Network (CAN bus)** is a robust vehicle bus standard designe
 
 ![CAN Node](CAN_Node.png){: .rightwidth="972" height="589" style="max-width: 40%" .right } 
 
-A CAN Node is consist of:
+A CAN Node consists of:
 * CAN Controller
 * CAN Transceiver
 * Microcontroller
 
-Some microcontrollers like ESP32, STM32xxx have an built-in CAN Controller, so we just need to have additionaly a CAN Transceiver to complete the node. But in some microtroller like Arduino Uno R3 don't have a built-in CAN Controller, to complete the CAN node, we have to add external CAN Controller and CAN Transceiver. 
+Some microcontrollers like ESP32, STM32xxx have a built-in CAN Controller, so we just need to have additionally a CAN Transceiver to complete the node. But in some microcontroller like Arduino UNO R3 don't have a built-in CAN Controller, to complete the CAN node, we have to add external CAN Controller and CAN Transceiver. 
 
 ![Setup Connection with STM32](can-connection-stm32.jpg){: style="max-width: 75%"}
 
@@ -74,7 +74,7 @@ Because STM32 have built-in CAN Controller, so we only need to connect them via 
 
 ![External Can Module](external-can-module.jpg){: style="max-width: 75%"}
 
-We use this module for connecting the Arduino Uno R3 because it doesn't have the built-in CAN Controller. This module connect with the Arduino Uni via SPI connection.
+We use this module for connecting the Arduino UNO R3 because it doesn't have the built-in CAN Controller. This module connects with the Arduino Uni via SPI connection.
 
 Name of the components: 
 * CAN Controller: `MCP2515`
@@ -82,7 +82,7 @@ Name of the components:
 
 ## Design my own STM32 CAN Node
 
-If we use a separate CAN Transceiver with the STM32 board. The complexcity of wiring become bigger when we have lots of nodes connect to the bus. To solve this problem, I decided to make a custom PCB board which have a CAN Transceiver lays on it.
+If we use a separate CAN Transceiver with the STM32 board. The complexity of wiring become bigger when we have lots of nodes to connect to the bus. To solve this problem, I decided to make a custom PCB board which have a CAN Transceiver lies on it.
 
 
 ### Components
@@ -106,7 +106,7 @@ My custom CAN Node includes:
 
 ![CAN Connection](physical-can-bus-2.jpg)
 
-With 2x CAN Connector for each board, we can setup the boards connected in 2 ways:
+With 2x CAN Connector for each board, we can set up the boards connected in 2 ways:
 * Connection in series
 * Connection in parallel
 
@@ -117,4 +117,4 @@ With 2x CAN Connector for each board, we can setup the boards connected in 2 way
 
 You can access the repository for the designed file [HERE](https://github.com/huynhtancuong/Prj_Olymp_ReflowOven_CANNode_STM32)
 
-To design this board, I used `Altium Designer` program. You have to buy a lisence or use crack version so as to use it. I will consider to use `KiCAD` in the future, because it's a free and open source program.
+To design this board, I used `Altium Designer` program. You have to buy a license or use crack version to use it. I will consider to use `KiCAD` in the future, because it's a free and open source program.
