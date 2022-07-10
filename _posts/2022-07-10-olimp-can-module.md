@@ -9,10 +9,9 @@ mermaid: true
 img_path: /assets/img/posts/olimp-can-module/
 image: 
     path: my-custom-can-node-front.jpg
-    width: 320
-    height: 165
-    alt: My own custom CAN node
 ---
+
+
 
 In this post, I'm going to show you about my CAN module and short explanation about what is CAN, and problem solved by CAN. Now let's start with the problem which lead to the invention of CAN.
 
