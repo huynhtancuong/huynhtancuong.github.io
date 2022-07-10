@@ -2,6 +2,8 @@
 title: About
 icon: fas fa-info-circle
 order: 4
+layout: post
+toc: true
 ---
 
 > Add Markdown syntax content to file `_tabs/about.md`{: .filepath } and it will show up on this page.
@@ -71,4 +73,5 @@ Project description here...
 * Multi-tasking
 
 ---
+# Reverse Footnote
 [^OLIMP]: The OLIMP Association (Open Laboratory of Ideas, Methods and Practices) is an association of open laboratories designed to develop ideas for the exchange of experience, self-development and project activities.
