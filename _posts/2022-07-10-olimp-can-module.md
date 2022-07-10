@@ -1,5 +1,5 @@
 ---
-title: I made a CAN module!
+title: I made my own custom CAN node!
 author: huynhtancuong
 date: 2022-07-10 10:05:00 +0300
 categories: [Projects, OLIMP]
@@ -7,11 +7,16 @@ tags: [stm32, can bus]
 math: true
 mermaid: true
 img_path: /assets/img/posts/olimp-can-module/
+image: 
+    path: my-custom-can-node-front.jpg
+    width: 400
+    height: 400
+    alt: My own custom CAN node
 ---
 
 In this post, I'm going to show you about my CAN module and short explanation about what is CAN, and problem solved by CAN. Now let's start with the problem which lead to the invention of CAN.
 
-## Problem of car's development
+## Problem of Automobile's development
 
 A long time a go, in the automobile intrustry, people start to make smarter car with more and more features. A long with that, the car must contain more electrical components, that lead to the result that there are more and more wires in the car so as to connect these electrical components together. The more wire, the more complicated structure, the harder for worker to detect and repair the car if there are problems.
 
