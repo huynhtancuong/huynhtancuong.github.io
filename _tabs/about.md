@@ -4,9 +4,10 @@ icon: fas fa-info-circle
 order: 4
 layout: post-without-title
 toc: true
+permalink: /about/
 ---
 
-
+Hi :wave: , 
 ---
 
 # Personal Projects
