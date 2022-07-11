@@ -1,6 +1,6 @@
  <!-- My Custom bootstrap timeline CSS -->
  <link rel="stylesheet" href="{{ '/assets/css/bootstrap-timeline.css' | relative_url }}">
-
+ <meta name="color-scheme" content="dark light">
 
  
 
@@ -36,7 +36,7 @@
                                         <div class="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInLeft;">
                                             <div class="timeline-icon"><i class="{{event[1].icon}}" aria-hidden="true"></i></div>
                                             <div class="timeline-text">
-                                                <h6>{{event[1].name}}</h6>
+                                                <h6><a href="{{event[1].link}}">{{event[1].name}}</a></h6>
                                                 <p>{{event[1].description}}</p>
                                             </div>
                                         </div>

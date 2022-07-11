@@ -14,25 +14,29 @@ timelines: {
                 1: {
                   name: something1,
                   description: description of something,
-                  icon: fa fa-archive
+                  icon: fa fa-archive,
+                  link: "../about/#3-automatic-hand-washing-machine"
                 },
 
                 2: {
                   name: something2,
                   description: description of something,
-                  icon: fa fa-address-card
+                  icon: fa fa-address-card,
+                  link: "#"
                 },
               
                 3: {
                   name: something3,
                   description: description of something,
-                  icon: fa fa-address-card
+                  icon: fa fa-address-card,
+                  link: "#"
                 },
 
                 4: {
                   name: something34,
                   description: description of something,
-                  icon: fa fa-address-card
+                  icon: fa fa-address-card,
+                  link: "#"
                 }
           }
       },
@@ -42,19 +46,22 @@ timelines: {
                 1: {
                   name: something4,
                   description: description of something,
-                  icon: fa fa-address-card
+                  icon: fa fa-address-card,
+                  link: "#"
                 },
 
                 2: {
                   name: something5,
                   description: description of something,
-                  icon: fa fa-address-card
+                  icon: fa fa-address-card,
+                  link: "#"
                 },
               
                 3: {
                   name: something6,
                   description: description of something,
-                  icon: fa fa-address-card
+                  icon: fa fa-address-card,
+                  link: "#"
                 }
           }
       },
@@ -64,19 +71,22 @@ timelines: {
                 1: {
                   name: something7,
                   description: description of something,
-                  icon: fa fa-address-card
+                  icon: fa fa-address-card,
+                  link: "#"
                 },
 
                 2: {
                   name: something8,
                   description: description of something,
-                  icon: fa fa-address-card
+                  icon: fa fa-address-card,
+                  link: "#"
                 },
               
                 3: {
                   name: something9,
                   description: description of something,
-                  icon: fa fa-address-card
+                  icon: fa fa-address-card,
+                  link: "#"
                 }
           }
       }
@@ -87,6 +97,7 @@ timelines: {
 
 
 {% include timeline.html %}
+
 
 <!-- {{page.timelines.milestones[1].events[1].name}}
 
