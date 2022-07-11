@@ -7,7 +7,12 @@ toc: true
 permalink: /about/
 ---
 
-Hi :wave: , 
+Hi :wave:, my name is **Huynh Tan Cuong**, and people in Russia call me by the name **Хюинь Тан Куонг**.
+
+As of July 2022, I'm a first-year Bachelor student at *ITMO University* studying *Mechatronic and Robotics*. Before that, I was a high school student at *Ly Thuong Kiet High school*.
+
+My primary interests are in making robot, DIY things and study the magic of math which stand behind the whole robot industry. 
+
 ---
 
 # Personal Projects
@@ -26,6 +31,10 @@ Project description here...
 Project description here...
 ## 7. Wireless Lamp Control via WIFI
 Project description here...
+
+---
+
+# Competitions
 
 ---
 
