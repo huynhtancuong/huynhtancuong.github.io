@@ -6,9 +6,10 @@ categories: [Projects, OLIMP]
 tags: [stm32, can bus]
 math: true
 mermaid: true
-img_path: /assets/img/posts/olimp-can-module/
 image: 
-    path: custom-can-node-thumbnail.jpg
+    path: /assets/img/posts/olimp-can-module/custom-can-node-thumbnail.jpg
+
+# img_path: /assets/img/posts/olimp-can-module/
 ---
 
 
@@ -55,10 +56,10 @@ A **Controller Area Network (CAN bus)** is a robust vehicle bus standard designe
 * All nodes are connected to each other through a physically conventional **two wire bus**.
 * The wires are a twisted pair with a 120 $\Omega$ which match with the **characteristic impedance** of the transmission line to avoid reflection.
 
-![High-speed CAN network](CAN_ISO11898-2_Network.png){: .normal}
+![High-speed CAN network](/assets/img/posts/olimp-can-module/CAN_ISO11898-2_Network.png){: .normal}
 
 
-![CAN Node](CAN_Node.png){: .rightwidth="972" height="589" style="max-width: 40%" .right } 
+![CAN Node](/assets/img/posts/olimp-can-module/CAN_Node.png){: .rightwidth="972" height="589" style="max-width: 40%" .right } 
 
 A CAN Node consists of:
 * CAN Controller
@@ -67,11 +68,11 @@ A CAN Node consists of:
 
 Some microcontrollers like ESP32, STM32xxx have a built-in CAN Controller, so we just need to have additionally a CAN Transceiver to complete the node. But in some microcontroller like Arduino UNO R3 don't have a built-in CAN Controller, to complete the CAN node, we have to add external CAN Controller and CAN Transceiver. 
 
-![Setup Connection with STM32](can-connection-stm32.jpg){: style="max-width: 75%"}
+![Setup Connection with STM32](/assets/img/posts/olimp-can-module/can-connection-stm32.jpg){: style="max-width: 75%"}
 
 Because STM32 have built-in CAN Controller, so we only need to connect them via CAN Transceiver.
 
-![External Can Module](external-can-module.jpg){: style="max-width: 75%"}
+![External Can Module](/assets/img/posts/olimp-can-module/external-can-module.jpg){: style="max-width: 75%"}
 
 We use this module for connecting the Arduino UNO R3 because it doesn't have the built-in CAN Controller. This module connects with the Arduino Uni via SPI connection.
 
@@ -86,7 +87,7 @@ If we use a separate CAN Transceiver with the STM32 board. The complexity of wir
 
 ### Components
 
-![My own custom CAN Node - Front](my-custom-can-node-front.jpg){: style="max-width: 75%"}
+![My own custom CAN Node - Front](/assets/img/posts/olimp-can-module/my-custom-can-node-front.jpg){: style="max-width: 75%"}
 
 My custom CAN Node includes: 
 * Microcontroller `STM32F103C8T6`
@@ -98,12 +99,12 @@ My custom CAN Node includes:
 * Boot configuration selector
 * Connector for the thyristor control board
 
-![My own custom CAN Node - Back](my-custom-can-node-back.jpg){: width="972" height="589" style="max-width: 310px" .normal}
-![My own custom CAN Node - Wiring](my-custom-can-node-wiring.jpg){: width="972" height="589" style="max-width: 310px" .normal} 
+![My own custom CAN Node - Back](/assets/img/posts/olimp-can-module/my-custom-can-node-back.jpg){: width="972" height="589" style="max-width: 310px" .normal}
+![My own custom CAN Node - Wiring](/assets/img/posts/olimp-can-module/my-custom-can-node-wiring.jpg){: width="972" height="589" style="max-width: 310px" .normal} 
 
 ### Connection between boards
 
-![CAN Connection](physical-can-bus-2.jpg)
+![CAN Connection](/assets/img/posts/olimp-can-module/physical-can-bus-2.jpg)
 
 With 2x CAN Connector for each board, we can set up the boards connected in 2 ways:
 * Connection in series
