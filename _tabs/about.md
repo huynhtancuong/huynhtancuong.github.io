@@ -15,7 +15,7 @@ project-timelines: {
             events: {
                 1: {
                   name: Custom PCB of CAN Node,
-                  description: "A custom CAN Node which have a STM32F103 and built-in CAN Transceiver",
+                  description: "A custom CAN Node which have a STM32F103 and built-in CAN Transceiver.",
                   icon: bi bi-cpu,
                   link: "#",
                   status: "done"
@@ -23,38 +23,42 @@ project-timelines: {
 
                 2: {
                   name: Differential Automobile,
-                  description: "",
+                  description: "A differential drive which can avoid obstacle by using <i>tangential escape</i>.",
                   icon: fa fa-car,
                   link: "#",
-                  status: "process"
+                  status: "done"
                 },
               
                 3: {
                   name: 3-Axis Robotic Arm,
-                  description: "",
+                  description: "A 3-axis robotic arm which can autonomous move to given point in space.",
                   icon: bi bi-wrench,
-                  link: "#"
+                  link: "#",
+                  status: "done"
                 },
 
                 4: {
                   name: 6-Axis Robotic Arm,
-                  description: "",
+                  description: "A 6-axis robotic arm which can autonomous move to given point and given direction of the gripper in space.",
                   icon: bi bi-wrench,
-                  link: "#"
+                  link: "#",
+                  status: "active"
                 },
 
                 5: {
                   name: Mathematic model of DC motor,
-                  description: "",
+                  description: "A mathematic model of DC motor which describe the characteristic of the motor.",
                   icon: bi bi-book,
-                  link: "#"
+                  link: "#",
+                  status: "inactive"
                 },
 
                 6: {
                   name: Self Balancing Robot,
-                  description: "",
+                  description: "A mathematical approach to build a self balancing robot",
                   icon: fa fa-car,
-                  link: "#"
+                  link: "#",
+                  status: "inactive"
                 }
           }
       },
@@ -63,16 +67,18 @@ project-timelines: {
             events: {
                 1: {
                   name: Custom PCB of LED Clock,
-                  description: "",
+                  description: "A custom LED Clock based on STM32F103 and ESP8266.",
                   icon: fa fa-clock,
-                  link: "#"
+                  link: "#",
+                  status: "done"
                 },
 
                 2: {
                   name: Custom PCB of Arduino Nano,
-                  description: "",
+                  description: "A custom Arduino Nano for PCB designing practice.",
                   icon: fa fa-clock,
-                  link: "#"
+                  link: "#",
+                  status: "done"
                 }
           }
       },
@@ -82,37 +88,42 @@ project-timelines: {
                 
                 2: {
                     name: Automatic Hand Washer,
-                    description: "",
+                    description: "An automatic antiseptic liquid dispenser and user's temperature monitoring.",
                     icon: fa fa-thermometer-empty,
-                    link: "#"
+                    link: "#",
+                    status: "done"
                     },
               
                 3: {
                     name: Virtual Assistance for The Blinds,
-                    description: "",
+                    description: "A virtual assistance for visually impaired people which based on Raspberry Pi, Google Cloud Platform.",
                     icon: fa fa-blind,
-                    link: "#"
+                    link: "#",
+                    status: "done"
                     },
               
                 4: {
                     name: Self Balancing Robot,
-                    description: "",
+                    description: "A practcal approach to build a self balancing robot.",
                     icon: fa fa-car,
-                    link: "#"
+                    link: "#",
+                    status: "done"
                     }, 
 
                 1: {
                     name: Make my own Speaker,
-                    description: ,
+                    description: "A build of bluetooth speaker from recycled material.",
                     icon: fa fa-volume-up,
-                    link: "#"
+                    link: "#",
+                    status: "done"
                 },
 
                 5: {
                     name: Spider bot,
-                    description: ,
+                    description: "Moveable but not the mathematic approach to build it.",
                     icon: bi bi-robot,
-                    link: "#"
+                    link: "#",
+                    status: "cancelled"
                 }
           }
       },
@@ -121,30 +132,34 @@ project-timelines: {
             events: {
                 1: {
                   name: Automatic Watering System,
-                  description: "",
+                  description: "An automatic watering system for plants, which can be controlled and data monitoring on smartphone.",
                   icon: fa fa-tint,
-                  link: "#"
+                  link: "#",
+                  status: "done"
                 },
 
                 2: {
                   name: Wireless Room Light  ,
-                  description: "",
+                  description: "A wireless room light control which based on ESP8266 microcontroller.",
                   icon: fa fa-lightbulb,
-                  link: "#"
+                  link: "#",
+                  status: "done"
                 },
               
                 3: {
                   name: Line Follower Robot,
-                  description: "",
+                  description: "A line follower robot which based on GaraStem educational kit.",
                   icon: fa fa-car,
-                  link: "#"
+                  link: "#",
+                  status: "done"
                 },
 
                 4: {
                   name: LED Board Decoration,
-                  description: "",
+                  description: "A LED board for camping in Datlat, for decoration and competition between classes.",
                   icon: fa fa-lightbulb,
-                  link: "#"
+                  link: "#",
+                  status: "done"
                 }
           }
       }

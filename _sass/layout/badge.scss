@@ -1,0 +1,19 @@
+.badge-success {
+    background-color: var(--prompt-tip-bg)!important;
+    color: var(--prompt-tip-icon-color)!important;
+}
+
+.badge-warning {
+    background-color: var(--prompt-warning-bg)!important;
+    color: var(--prompt-warning-icon-color)!important;
+}
+
+.badge-info {
+    background-color: var(--prompt-info-bg)!important;
+    color: var(--prompt-info-icon-color)!important;
+}
+
+.badge-danger {
+    background-color: var(--prompt-danger-bg)!important;
+    color: var(--prompt-danger-icon-color)!important;
+}

@@ -38,8 +38,12 @@
                                                 {% case event[1].status %}
                                                     {% when "done" %}
                                                         <span class="badge badge-success">Done</span>
-                                                    {% when "process" %}
-                                                    <span class="badge badge-warning">Process</span>
+                                                    {% when "inactive" %}
+                                                        <span class="badge badge-warning">Inactive</span>
+                                                    {% when "cancelled" %}  
+                                                        <span class="badge badge-danger">Cancelled</span>
+                                                    {% when "active" %}
+                                                        <span class="badge badge-info">Active</span>
 
                                                 {% endcase %}
                                             </div>
