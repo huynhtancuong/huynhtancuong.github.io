@@ -1,5 +1,6 @@
  <!-- My Custom bootstrap timeline CSS -->
  <link rel="stylesheet" href="{{ '/assets/css/bootstrap-timeline.css' | relative_url }}">
+ <script src="{{ base.url | prepend: site.url }}/assets/js/popover/bootstrap-popover.js"></script>
 
 {% if timeline %}
  
@@ -35,8 +36,14 @@
                                         <div class="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInLeft;">
                                             <div class="timeline-icon"><i class="{{event[1].icon}}" aria-hidden="true"></i></div>
                                             <div class="timeline-text">
-                                                <h6><a href="{{event[1].link}}" style="text-decoration: none;">{{event[1].name}}</a></h6>
-                                                <p>{{event[1].description}}</p>
+                                                <h6><a href="{{event[1].link}}" data-toggle="popover" title="{{-event[1].name-}}" data-content="{{-event[1].description-}}">{{event[1].name}}</a></h6>
+                                                {% case event[1].status %}
+                                                    {% when "done" %}
+                                                        <span class="badge badge-success">Done</span>
+                                                    {% when "process" %}
+                                                    <span class="badge badge-warning">Process</span>
+
+                                                {% endcase %}
                                             </div>
                                         </div>
                                     </div>

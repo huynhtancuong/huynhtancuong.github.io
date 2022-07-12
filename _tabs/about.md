@@ -7,7 +7,7 @@ toc: true
 permalink: /about/
 
 project-timelines: {
-  name: 'Personal Projects',
+  name: 'Personal Projects Timeline',
   description: 'A brief stories of my 3 years journey',
   milestones: {
       4: {
@@ -15,16 +15,18 @@ project-timelines: {
             events: {
                 1: {
                   name: Custom PCB of CAN Node,
-                  description: "",
+                  description: "A custom CAN Node which have a STM32F103 and built-in CAN Transceiver",
                   icon: bi bi-cpu,
-                  link: "#"
+                  link: "#",
+                  status: "done"
                 },
 
                 2: {
                   name: Differential Automobile,
                   description: "",
                   icon: fa fa-car,
-                  link: "#"
+                  link: "#",
+                  status: "process"
                 },
               
                 3: {
@@ -44,7 +46,7 @@ project-timelines: {
                 5: {
                   name: Mathematic model of DC motor,
                   description: "",
-                  icon: bi bi-infinity,
+                  icon: bi bi-book,
                   link: "#"
                 },
 
@@ -63,14 +65,14 @@ project-timelines: {
                   name: Custom PCB of LED Clock,
                   description: "",
                   icon: fa fa-clock,
-                  link: "../about/#3-automatic-hand-washing-machine"
+                  link: "#"
                 },
 
                 2: {
                   name: Custom PCB of Arduino Nano,
                   description: "",
                   icon: fa fa-clock,
-                  link: "../about/#3-automatic-hand-washing-machine"
+                  link: "#"
                 }
           }
       },
@@ -150,6 +152,9 @@ project-timelines: {
 }
 
 ---
+
+> This page is still in process of building.
+{: .prompt-danger}
 
 Hi :wave:, my name is **Huynh Tan Cuong**, and people in Russia call me by the name **Хюинь Тан Куонг**.
 
