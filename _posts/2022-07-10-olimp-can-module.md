@@ -8,7 +8,6 @@ math: true
 mermaid: true
 image: 
     path: /assets/img/posts/olimp-can-module/custom-can-node-thumbnail.jpg
-
 # img_path: /assets/img/posts/olimp-can-module/
 ---
 

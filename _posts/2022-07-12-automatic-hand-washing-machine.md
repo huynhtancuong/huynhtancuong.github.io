@@ -10,3 +10,5 @@ mermaid: true
 
 > This page is still in process of building.
 {: .prompt-danger}
+
+![Image](/assets/img/avatar.jpg)
