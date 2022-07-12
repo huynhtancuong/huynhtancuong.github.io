@@ -95,5 +95,5 @@ timelines: {
 ---
 
 
-
+{% assign timeline = page.timelines %}
 {% include timeline.html %}

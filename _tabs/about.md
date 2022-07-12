@@ -5,6 +5,150 @@ order: 4
 layout: post-without-title
 toc: true
 permalink: /about/
+
+project-timelines: {
+  name: 'Personal Projects',
+  description: 'A brief stories of my 3 years journey',
+  milestones: {
+      4: {
+            name: 2022,
+            events: {
+                1: {
+                  name: Custom PCB of CAN Node,
+                  description: "",
+                  icon: bi bi-cpu,
+                  link: "#"
+                },
+
+                2: {
+                  name: Differential Automobile,
+                  description: "",
+                  icon: fa fa-car,
+                  link: "#"
+                },
+              
+                3: {
+                  name: 3-Axis Robotic Arm,
+                  description: "",
+                  icon: bi bi-wrench,
+                  link: "#"
+                },
+
+                4: {
+                  name: 6-Axis Robotic Arm,
+                  description: "",
+                  icon: bi bi-wrench,
+                  link: "#"
+                },
+
+                5: {
+                  name: Mathematic model of DC motor,
+                  description: "",
+                  icon: bi bi-infinity,
+                  link: "#"
+                },
+
+                6: {
+                  name: Self Balancing Robot,
+                  description: "",
+                  icon: fa fa-car,
+                  link: "#"
+                }
+          }
+      },
+      3: {
+            name: 2021,
+            events: {
+                1: {
+                  name: Custom PCB of LED Clock,
+                  description: "",
+                  icon: fa fa-clock,
+                  link: "../about/#3-automatic-hand-washing-machine"
+                },
+
+                2: {
+                  name: Custom PCB of Arduino Nano,
+                  description: "",
+                  icon: fa fa-clock,
+                  link: "../about/#3-automatic-hand-washing-machine"
+                }
+          }
+      },
+      2: {
+            name: 2020,
+            events: {
+                
+                2: {
+                    name: Automatic Hand Washer,
+                    description: "",
+                    icon: fa fa-thermometer-empty,
+                    link: "#"
+                    },
+              
+                3: {
+                    name: Virtual Assistance for The Blinds,
+                    description: "",
+                    icon: fa fa-blind,
+                    link: "#"
+                    },
+              
+                4: {
+                    name: Self Balancing Robot,
+                    description: "",
+                    icon: fa fa-car,
+                    link: "#"
+                    }, 
+
+                1: {
+                    name: Make my own Speaker,
+                    description: ,
+                    icon: fa fa-volume-up,
+                    link: "#"
+                },
+
+                5: {
+                    name: Spider bot,
+                    description: ,
+                    icon: bi bi-robot,
+                    link: "#"
+                }
+          }
+      },
+      1: {
+            name: 2019,
+            events: {
+                1: {
+                  name: Automatic Watering System,
+                  description: "",
+                  icon: fa fa-tint,
+                  link: "#"
+                },
+
+                2: {
+                  name: Wireless Room Light  ,
+                  description: "",
+                  icon: fa fa-lightbulb,
+                  link: "#"
+                },
+              
+                3: {
+                  name: Line Follower Robot,
+                  description: "",
+                  icon: fa fa-car,
+                  link: "#"
+                },
+
+                4: {
+                  name: LED Board Decoration,
+                  description: "",
+                  icon: fa fa-lightbulb,
+                  link: "#"
+                }
+          }
+      }
+  }
+}
+
 ---
 
 Hi :wave:, my name is **Huynh Tan Cuong**, and people in Russia call me by the name **Хюинь Тан Куонг**.
@@ -17,21 +161,8 @@ My primary interests are in making robot, DIY things and study the magic of math
 
 # Personal Projects
 
-## 1. Automatic Watering System
-Project description here...
-## 2. Virtual Assistance for visually impaired people
-Project description here...
-## 3. Automatic Hand Washing Machine
-Project description here...
-## 4. Balancing Robot
-Project description here...
-## 5. Line-follower Robot
-Project description here...
-## 6. LED Board for camping decoration
-Project description here...
-## 7. Wireless Lamp Control via WIFI
-Project description here...
-
+{% assign timeline = page.project-timelines %}
+{% include timeline.html %}
 ---
 
 # Competitions

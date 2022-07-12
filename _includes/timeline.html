@@ -1,16 +1,16 @@
  <!-- My Custom bootstrap timeline CSS -->
  <link rel="stylesheet" href="{{ '/assets/css/bootstrap-timeline.css' | relative_url }}">
 
-
+{% if timeline %}
  
- <section class="timeline_area section_padding_130">
+<section class="timeline_area section_padding_130">
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-12 col-sm-8 col-lg-6">
                 <!-- Section Heading-->
                 <div class="section_heading text-center">
-                    <h6>{{page.timelines.name}}</h6>
-                    <h3>{{page.timelines.description}}</h3>
+                    <h6>{{-timeline.name-}}</h6>
+                    <h3>{{-timeline.description-}}</h3>
                     <div class="line"></div>
                 </div>
             </div>
@@ -20,7 +20,7 @@
                 <!-- Timeline Area-->
                 <div class="apland-timeline-area">
 
-                    {% for milestone in page.timelines.milestones %}
+                    {% for milestone in timeline.milestones %}
 
                         <!-- Single Timeline Content-->
                         <div class="single-timeline-area">
@@ -35,12 +35,12 @@
                                         <div class="single-timeline-content d-flex wow fadeInLeft" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInLeft;">
                                             <div class="timeline-icon"><i class="{{event[1].icon}}" aria-hidden="true"></i></div>
                                             <div class="timeline-text">
-                                                <h6><a href="{{event[1].link}}">{{event[1].name}}</a></h6>
+                                                <h6><a href="{{event[1].link}}" style="text-decoration: none;">{{event[1].name}}</a></h6>
                                                 <p>{{event[1].description}}</p>
                                             </div>
                                         </div>
                                     </div>
-                                
+
                                 {% endfor %}
 
                             </div>
@@ -54,3 +54,4 @@
     </div>
 </section>
 
+{% endif %}

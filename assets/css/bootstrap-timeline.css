@@ -54,7 +54,7 @@ body {
     width: 11px;
     height: 11px;
     border-radius: 50%;
-    background-color: #f1c40f;
+    background-color: #b08ee0;
     content: "";
     top: 50%;
     right: 26px;
@@ -79,7 +79,7 @@ body {
     margin-top: 15px;
     -webkit-box-shadow: 0 0.25rem 1rem 0 rgba(47, 91, 234, 0.125);
     box-shadow: 0 0.25rem 1rem 0 rgba(47, 91, 234, 0.125);
-    border: 1px solid #ebebeb;
+    border: 4px solid #ebebeb;
 }
 @media only screen and (max-width: 575px) {
     .single-timeline-area .single-timeline-content {
@@ -91,7 +91,7 @@ body {
     transition-duration: 500ms;
     width: 30px;
     height: 30px;
-    background-color: #f1c40f;
+    background-color: #6200EE;
     -webkit-box-flex: 0;
     -ms-flex: 0 0 30px;
     flex: 0 0 30px;
@@ -108,15 +108,18 @@ body {
     -webkit-transition-duration: 500ms;
     transition-duration: 500ms;
 }
+.single-timeline-area .single-timeline-content .timeline-text a {
+    text-decoration: none;
+}
 .single-timeline-area .single-timeline-content .timeline-text p {
     font-size: 13px;
     margin-bottom: 0;
 }
 .single-timeline-area .single-timeline-content:hover .timeline-icon,
 .single-timeline-area .single-timeline-content:focus .timeline-icon {
-    background-color: #020710;
+    background-color: #3700B3;
 }
 .single-timeline-area .single-timeline-content:hover .timeline-text h6,
 .single-timeline-area .single-timeline-content:focus .timeline-text h6 {
-    color: #3f43fd;
+    color: #007bff;
 }
