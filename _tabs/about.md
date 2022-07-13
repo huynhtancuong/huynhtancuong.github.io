@@ -104,7 +104,7 @@ project-timelines: {
               
                 4: {
                     name: Self Balancing Robot,
-                    description: "A practcal approach to build a self balancing robot.",
+                    description: "A practical approach to build a self balancing robot.",
                     icon: fa fa-car,
                     link: "../posts/balancing-robot-saigontech/",
                     status: "done"
