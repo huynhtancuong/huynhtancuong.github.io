@@ -1,7 +1,7 @@
 ---
-title: Balancing Robot
+title: Saigon Tech's approach to make a Self Balancing Robot
 author: huynhtancuong
-date: 2022-07-10 1:26:00 +0300
+date: 2019-01-30 1:26:00 +0300
 categories: [Projects, High School]
 tags: [balancing robot]
 math: true

@@ -1,9 +1,9 @@
 ---
-title: Virtual Assistance for Visually Impaired People
+title: Automatic Watering System
 author: huynhtancuong
-date: 2022-07-10 1:26:00 +0300
+date: 2019-03-23 00:00:00 +0300
 categories: [Projects, High School]
-tags: [virtual assistance, visually impaired people]
+tags: [automatic watering]
 math: true
 mermaid: true
 ---

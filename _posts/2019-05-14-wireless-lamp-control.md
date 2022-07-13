@@ -1,9 +1,9 @@
 ---
-title: Line Follower Robot
+title: Wireless Lamp Controlling via Wifi
 author: huynhtancuong
-date: 2022-07-10 1:26:00 +0300
+date: 2019-05-14 1:26:00 +0300
 categories: [Projects, High School]
-tags: [robot, line-follower]
+tags: [wifi, wireless]
 math: true
 mermaid: true
 ---

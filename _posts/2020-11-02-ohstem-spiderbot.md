@@ -1,9 +1,9 @@
 ---
-title: Wireless Lamp Controlling via Wifi
+title: Ohstem's Spiderbot 
 author: huynhtancuong
-date: 2022-07-10 1:26:00 +0300
+date: 2020-11-02 1:26:00 +0300
 categories: [Projects, High School]
-tags: [wifi, wireless]
+tags: [spiderbot]
 math: true
 mermaid: true
 ---
