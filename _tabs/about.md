@@ -8,7 +8,7 @@ permalink: /about/
 
 project-timelines: {
   name: 'Personal Projects Timeline',
-  description: 'A brief stories of my 3 years journey',
+  description: 'A brief stories of my 4 years journey',
   milestones: {
       4: {
             name: 2022,
@@ -17,7 +17,7 @@ project-timelines: {
                   name: Custom PCB of CAN Node,
                   description: "A custom CAN Node which have a STM32F103 and built-in CAN Transceiver.",
                   icon: bi bi-cpu,
-                  link: "#",
+                  link: "../posts/olimp-can-module/",
                   status: "done"
                 },
 
@@ -90,15 +90,15 @@ project-timelines: {
                     name: Automatic Hand Washer,
                     description: "An automatic antiseptic liquid dispenser and user's temperature monitoring.",
                     icon: fa fa-thermometer-empty,
-                    link: "#",
+                    link: "../posts/automatic-hand-washing-machine/",
                     status: "done"
                     },
               
                 3: {
-                    name: Virtual Assistance for The Blinds,
+                    name: Virtual Assistance for Visually Impaired people,
                     description: "A virtual assistance for visually impaired people which based on Raspberry Pi, Google Cloud Platform.",
                     icon: fa fa-blind,
-                    link: "#",
+                    link: "../posts/virtual-assistance/",
                     status: "done"
                     },
               
@@ -106,7 +106,7 @@ project-timelines: {
                     name: Self Balancing Robot,
                     description: "A practcal approach to build a self balancing robot.",
                     icon: fa fa-car,
-                    link: "#",
+                    link: "../posts/balancing-robot-saigontech/",
                     status: "done"
                     }, 
 
@@ -123,7 +123,7 @@ project-timelines: {
                     description: "Moveable but not the mathematic approach to build it.",
                     icon: bi bi-robot,
                     link: "#",
-                    status: "cancelled"
+                    status: "done"
                 }
           }
       },
