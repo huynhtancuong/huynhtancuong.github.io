@@ -203,4 +203,3 @@ jekyll-archives:
 # Add emoji support
 plugins:
 - jemoji
-- jekyll-spaceship
