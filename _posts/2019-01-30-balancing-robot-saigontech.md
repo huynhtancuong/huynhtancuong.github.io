@@ -10,3 +10,16 @@ mermaid: true
 
 > This page is still in process of building.
 {: .prompt-danger}
+
+```mermaid
+ gitGraph:
+       commit
+       commit
+       branch develop
+       commit
+       commit
+       commit
+       checkout main
+       commit
+       commit
+```

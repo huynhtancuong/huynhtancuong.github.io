@@ -200,5 +200,7 @@ jekyll-archives:
     tag: /tags/:name/
     category: /categories/:name/
 
+# Add emoji support
 plugins:
 - jemoji
+- jekyll-spaceship
