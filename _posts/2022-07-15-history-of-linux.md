@@ -6,6 +6,8 @@ categories: [Courses, UNIX and Linux in Infocommunication]
 tags: [unix, linux. history]
 math: true
 mermaid: true
+image: 
+    path: /assets/img/posts/history-of-linux/history-of-linux-thumbnail.png
 ---
 
 > Bài viết này là một phần của khóa học UNIX and Linux in Infocommunication được dạy bởi trường đại học ITMO. Bạn có thể xem thêm các bài viết của khóa học này trong cùng category của bài viết.
