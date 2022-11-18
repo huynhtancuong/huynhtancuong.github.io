@@ -7,6 +7,63 @@ math: true
 mermaid: true
 ---
 
+> Bài viết này được tham khảo từ nhiều nguồn. Bạn có thể xem chi tiết ở phần [References](#references) ở cuối bài viết.
+{: .prompt-info}
+
+### Tình huống trong cuộc sống
+
+Khi lập trình, sẽ có lúc bạn lỡ tay xóa một đoạn code vì nghĩ rằng đoạn code đó không phù hợp nữa, nhưng sau đó lại phát hiện là đoạn code đó bạn vẫn cần dùng. Bạn nghĩ mình có thể nhớ lại chính xác những gì mình đã viết không? Thực sự rất rất khó. Nhưng nếu bạn có dùng phần mềm quản lý phiên bản mã nguồn thì mọi việc sẽ trở nên đơn giản hơn rất nhiều vì phần mềm quản lý phiên bản mã nguồn sẽ cho phép bạn dễ dàng quay lại một phiên bản trước của tập tin đó. Có thể nói phần mềm quản lý mã nguồn là công cụ không thể thiếu đối với lập trình viên và một trong những phần mềm hỗ trợ quản lý phiên bản rất phổ biến hiện nay là **Git**.
+
+**Git** sẽ giúp người dùng lưu lại các phiên bản của những làn thay đổi mã nguồn để dễ dàng khôi phục lại phiên bản cũ mà không cần phải nhớ là mình đã chỉnh sửa ở đâu, tất cả phiên bản bạn cần đều đã được sao lưu.
+
+**Git** sẽ giúp bạn: 
+- Lưu lại được các phiên bản khác nhau của mã nguồn dự án phần mềm
+- Khôi phục lại mã nguồn từ một phiên bản bất kỳ
+- Dễ dàng so sánh giữa các phiên bản
+- Phát hiện được ai đã sửa phần nào làm phát sinh lỗi
+- Khôi phục lại tập tin bị mất
+- Dễ dàng thử nghiệm, mở rộng tính năng của dự án mà không làm ảnh hưởng đến phiên bản chính (master branch)
+- Giúp phối hợp thực hiện dự án trong nhóm một cách hiệu quả
+
+### Git là gì?
+**Git** là một hệ thống quản lý phiên bản phân tán (Distributed Version Control System - DVCS) ra đời vào năm 2005 và hiện được dùng rất phổ biến. So với các hệ thống quản lý phiên bản tập trung khi tất cả mã nguồn và lịch sử thay đổi chỉ được lưu một nơi là máy chủ thì trong hệ thống phân tán, các máy khách không chỉ "check out" phiên bản mới nhất của các tệp tin mà là sao chép (mirror) toàn bộ kho mã nguồn (repository). Như vậy, nếu như máy chỉ ngừng hoạt động, thì bạn hoàn toàn có thể lấy kho chứa từ bất kỳ máy khách nào để sao chép ngược trở lại máy chủ để khôi phục lại toàn bộ hệ thống. Mỗi checkout thực sự là một bản sao đầy đủ của tất cả dữ liệu của kho chứa từ máy chủ.
+
+![](https://csc.edu.vn/data/images/tin-tuc/lap-trinh-csdl/kien-thuc-lap-trinh/git-la-gi-nhung-khai-niem-git-co-ban/git-la-gi-nhung-khai-niem-co-ban-khi-lam-viec-tren-git.png){: .center}
+
+### Các khái niệm cơ bản
+#### Repository 
+`Repository` là nơi sẽ ghi lại trạng thái của thư mục và file. Trạng thái được lưu lại như là lịch sử thay đổi của nội dung.
+`Repository` của `Git` được phân thành 2 loại là `remote repository` và `local repository`
+
+| Repository        | Description                                                                 |
+| ----------------- |:--------------------------------------------------------------------------- |
+| Remote Repository | Là Repository để chia sẻ giữa nhiều người và bố trí trên server chuyên dụng |
+| Local Repository  | Là Repository bố trí trên máy tính của chúng ta                             |
+
+#### Working Tree và Index 
+Một thư mục Git được tổ chức như sau:
+- Thư mục đang làm việc (`Working Directory`): chứa các tập tin hiện tại.
+- Chỉ mục (`Index`) hay `staging area` là nơi chứa các files sẵn sàng để được commit
+- `Repository` là nơi chứa các file đã được commit
+
+```mermaid
+classDiagram
+	Working_Directory --|> Index : add
+	Index --|> Repository : commit
+	Working_Directory : files
+	Index : files
+	Repository: files
+	
+```
+
+
+
+
+
+
+
+
+
 ### Git Flow khi làm việc một mình 
 
 Khi phát triển tính năng cho sản phẩm, ta nên phát triển ở branch riêng để tránh tình trạng branch chính chứa những commit *bẩn*. Sau đây là cách phân chia branch được gợi ý.
@@ -54,12 +111,12 @@ $$ \text{Major.Minor.Patch-BuildID} $$
 
 | Từ khóa | Giải thích                                                           |
 | ------- | -------------------------------------------------------------------- |
-| MAJOR   | Thay đổi khi bạn thay đổi API **không** còn tương thích với chuẩn cũ |
-| MINOR   | Thay đổi khi bạn thêm tính năng mới và vẫn tương tích với chuẩn cũ   |
-| PATCH   | Thay đổi khi bạn fix lỗi                                             |
+| Major   | Thay đổi khi bạn thay đổi API **không** còn tương thích với chuẩn cũ |
+| Minor   | Thay đổi khi bạn thêm tính năng mới và vẫn tương tích với chuẩn cũ   |
+| Patch   | Thay đổi khi bạn fix lỗi                                             |
 | BuildID | Ngày commit dạng YYYYMMDD                                            |
 
-### Các bài toán trong Git 
+### Một số trường hợp hay gặp 
 
 #### Sửa commit cuối cùng 
 Để ghi đè lên commit cuối cùng, ta có thể sử dụng lệnh sau
@@ -114,10 +171,6 @@ Quay trở lại commit gần nhất
 ```bash
 git reset --hard HEAD
 ```
-hoặc
-```bash
-git stash
-```
 
 #### Chỉnh sửa commit cuối cùng trên remote 
 
@@ -128,6 +181,9 @@ git commit --amend
 Sau đó push lên remote với tùy chọn force để ghi đè lên remote 
 ```bash
 git push --force origin master 
+```
+hoặc
+```bash 
 git push -f origin master 
 ```
 
@@ -159,5 +215,6 @@ Giả sử ta muốn quay lại commit 19632cb và tạo branch mới tại đó
 git checkout 19632cb -b <new branch>
 ```
 
-### Reference 
+### References
 * DEVIOT
+* [Trung tâm Tin học Trường Đại học Khoa học Tự nhiên](https://csc.edu.vn/lap-trinh-va-csdl/tin-tuc/kien-thuc-lap-trinh/Git-la-gi--Nhung-khai-niem-co-ban-khi-lam-viec-tren-Git-4133)
