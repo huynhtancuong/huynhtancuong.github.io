@@ -16,6 +16,7 @@ Khoảng tầm hè năm 2022 thì mình có mua một cái nồi chiên không d
 
 ### Sơ qua về cái nồi chiên không dầu
 Nói qua về tính năng của chiếc nồi chiên không dầu này thì cũng rất là xịn (so với giá tiền). Nhiệt độ tối đa mà nó có thể đạt đến là khoảng 200 độ C. Màn hình led 7 thanh để hiển thị nhiệt độ và thời gian. Có nút bấm cảm ứng điện dung để có thể cài đặt thời gian và nhiệt độ. Có những profile được cài đặt sẵn, ví dụ như để nướng gà, cá,... thì sẽ cần nhiệt độ và thời gian khác nhau. Nồi có dung tích phần trong là 3.5L và phần ngoài là 5L, rất to, nên nướng gà thì khá là thoải mái. 
+
 ![Nướng gà!!!](/assets/img/posts/diy-smart-air-fryer/chicken.jpg){: style="max-width: 500px"}
 
 
