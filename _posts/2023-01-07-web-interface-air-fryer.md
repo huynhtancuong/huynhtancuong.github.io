@@ -17,7 +17,7 @@ Khoảng tầm hè năm 2022 thì mình có mua một cái nồi chiên không d
 ### Sơ qua về cái nồi chiên không dầu
 Nói qua về tính năng của chiếc nồi chiên không dầu này thì cũng rất là xịn (so với giá tiền). Nhiệt độ tối đa mà nó có thể đạt đến là khoảng 200 độ C. Màn hình led 7 thanh để hiển thị nhiệt độ và thời gian. Có nút bấm cảm ứng điện dung để có thể cài đặt thời gian và nhiệt độ. Có những profile được cài đặt sẵn, ví dụ như để nướng gà, cá,... thì sẽ cần nhiệt độ và thời gian khác nhau. Nồi có dung tích phần trong là 3.5L và phần ngoài là 5L, rất to, nên nướng gà thì khá là thoải mái. 
 
-![Nướng gà!!!](/assets/img/posts/diy-smart-air-fryer/chicken.jpg){: style="max-width: 500px"}
+![Nướng gà!!!](/assets/img/posts/diy-smart-air-fryer/chicken.jpg){: style="max-width: 60%"}
 
 
 ### Nguyên lý hoạt động của nồi chiên không dầu
@@ -81,7 +81,7 @@ Ban đầu mình định làm bảng điều khiển giống cũ, nhưng vì gi�
 
 Để làm được web thì bắt buộc phải dính đến HTML, CSS, Javascript. Nên mình quyết định dành hẵn một ngày để học sơ qua mấy cái này. Cộng với những tutorial trên mạng nữa thì đây là thành quả sau 2 ngày của mình. Một cái web interface có chức năng chọn nhiệt độ, thời gian và trạng thái của nồi chiên không dầu, bao gồm cả một biểu đồ về nhiệt độ đo được trong nồi cập nhật sau mỗi 2 giây.
 
-![Web interface](https://www.webpagescreenshot.info/image-url/QKaiICsiw)
+![Web interface](/assets/img/posts/diy-smart-air-fryer/web-interface.png)
 *Giao diện điều khiển web của nồi chiên không dầu*
 
 Nhưng làm sao để kết nối với nồi chiên không dầu thông qua điện thoại hay là máy tính? Mình đã lập trình sao cho vi điều khiển trở thành một điểm kết nối Wifi. Khi điện thoại kết nối vào điểm Wifi này thì có thể mở giao diện điều khiển và tương tác với nó.
@@ -101,3 +101,20 @@ Thông qua quá trình làm dự án này thì mình có cơ hội áp dụng nh
 - Biết được những khó khăn trong việc lập trình led 7 thanh.
 
 Tóm lại, mình đã chuyển một cái nồi chiên giao diện nút bấm bình thường thành giao diện web. Mặc dù không thiết thực lắm khi mỗi lần đảo đồ ăn thì phải cầm lấy cái điện thoại để bấm nút thì nó mới chạy. Nhưng được cái là tự tay mình sửa thì nó vui ^^.
+
+---
+---
+
+### Những cập nhật sau này...
+Nếu bạn là một người đọc phổ thông thì phần này không dành cho bạn đâu nha ^^.
+#### Add cache feature
+Vì mình có một file javascript khá là nặng dùng để phục vụ việc plot graph nên mỗi lần refresh lại trang thì con ESP32 đều phải gửi lại dữ liệu này cho client. Gây nên việc quá tải cho ESP. Để giải quyết vấn đề này thì mình đã thêm vào tính năng cache. Vậy nên khi người dùng tải web lần đầu thì những file tài nguyên sẽ được lưu lại và được sử dụng cho những lần sau. Kết quả là viêc tải trang sẽ diễn ra nhanh hơn.
+
+Dưới đây là so sánh giữa việc có cache và không có cache. Như bạn có thể thấy thì việc load trang đã diễn ra nhanh hơn gấp 4-5 lần.
+
+![Không có cache](/assets/img/posts/diy-smart-air-fryer/feature-no-cache.jpg){: style="max-width: 80%"}
+*Không có cache. Thời gian load là 2.3s*
+
+![Có cache](/assets/img/posts/diy-smart-air-fryer/feature-with-cache.jpg){: style="max-width: 80%"}
+*Có cache. Thời gian load là 0.5s*
+
