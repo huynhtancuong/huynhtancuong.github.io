@@ -118,3 +118,5 @@ Dưới đây là so sánh giữa việc có cache và không có cache. Như b�
 ![Có cache](/assets/img/posts/diy-smart-air-fryer/feature-with-cache.jpg){: style="max-width: 80%"}
 *Có cache. Thời gian load là 0.5s*
 
+#### Add OTA feature
+Sau khi hoàn thành xong thì mình đã lắp mạch vào trong máy, nên nếu muốn cập nhật thêm tính năng và phải nạp lại code thì mình phải tháo bung nồi chiên không dầu ra để tiếp cận được với mạch. Nhưng như thế khá là mất công, nên sau khi tìm hiểu thì mình đã tìm ra giải pháp đó chính là nạp code thông qua phương thức OTA (Over the Air). Với phương pháp này thì mỗi lần nạp code thì mình không phải tháo bung mạch ra nữa. Mình làm theo [hướng dẫn](https://randomnerdtutorials.com/esp32-ota-over-the-air-vs-code/) này, nếu bạn nào có hứng thú thì xem nha. 
