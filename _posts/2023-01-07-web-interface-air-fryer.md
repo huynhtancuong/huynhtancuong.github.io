@@ -69,7 +69,7 @@ Tiếp theo thì mình sẽ tiến hành đo và đánh dấu các chân. Mục 
 
 Bước sau đó là kết nối dây với chip điều khiển mới.
 
-![Kết nối với ESP32](https://i.paste.pics/7a423de41cfa44fc68736e19493725f9.png?trs=8e44ced726617b6de5939d6b92e05da938273676d3cd6586927e79c7a0d05828){: style="max-width: 80%"}
+![Kết nối với ESP32](/assets/img/posts/diy-smart-air-fryer/connect-to-esp32.jpg){: style="max-width: 80%"}
 *Kết nối với ESP32*
 
 Tiếp đó là làm quen với việc điều khiển đèn led trên bảng mạch này. Việc điều khiển này cũng không dễ dàng lắm, vì led được mắc theo dạng ma trận, nên để điều khiến được nó thì mình sẽ phải bật tắt các led tuần tự với nhau một cách nhanh chóng để đánh lừa mắt người (cái này gọi là multiplexing). Nhưng mình gặp một vấn đề đó là nếu tăng tần số quét lên thì vi điều khiển của mình không đáp ứng được (mình lập trình bằng RTOS, nên bị dính lỗi watchdog triggered, nếu ai biết hướng giải quyết thì chỉ mình với)
