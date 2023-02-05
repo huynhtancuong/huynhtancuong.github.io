@@ -53,7 +53,7 @@ First, I will remove the old microcontroller from the board. I don't have a dedi
 ![Remove the microcontroller](https://gcdnb.pbrd.co/images/WbYhIDZ6At9H.jpg?o=1){: style="max-width: 80%"}
 *Circuit board after removing the microcontroller*
 
-Sau đấy là hàn dây vào những chân của vi điều khiển cũ
+Then solder the wires to the pins of the old microcontroller
 
 ![Solder wire](https://gcdnb.pbrd.co/images/0z35MSj1SPQQ.jpg?o=1){: style="max-width: 80%"}
 
@@ -112,11 +112,11 @@ Because I have a fairly heavy javascript file to serve the plot graph, every tim
 
 Below is a comparison between cached and uncached. As you can see the page load was 4-5 times faster.
 
-![Không có cache](/assets/img/posts/diy-smart-air-fryer/feature-no-cache.jpg){: style="max-width: 80%"}
+![No cache](/assets/img/posts/diy-smart-air-fryer/feature-no-cache.jpg){: style="max-width: 80%"}
 *No cache. Loading time is 2.3s*
 
-![Có cache](/assets/img/posts/diy-smart-air-fryer/feature-with-cache.jpg){: style="max-width: 80%"}
-*There are caches. Loading time is 0.5s*
+![Have cache](/assets/img/posts/diy-smart-air-fryer/feature-with-cache.jpg){: style="max-width: 80%"}
+*Have cache. Loading time is 0.5s*
 
 #### Add OTA feature
 After finishing, I installed the circuit in the case, so if I want to update more features and have to reload the code, I have to disassemble the air fryer to access the circuit. But that was quite laborious, so after researching, I found the solution that is to load the code through the OTA (Over the Air) method. With this method, every time I load the code, I don't have to disassemble the circuit anymore. I follow this [tutorial](https://randomnerdtutorials.com/esp32-ota-over-the-air-vs-code/), if you are interested, please check it out.
