@@ -12,7 +12,7 @@ image:
 ### Why have this?
 Around the summer of 2022, I bought a Chinese air fryer for a pretty cheap price. At first, it was quite good to use, but about 2 months later, it died, plugged in and didn't see the indicator light on anymore. I guess it might be because I plugged it in continuously and didn't unplug it. But the main reason is probably because it sucks ^^.
 
-![An image of an oil-free fryer](https://apptradeinc.com/storage/2022/07/8-16.jpg)
+![An image of an oil-free fryer](/assets/img/posts/diy-smart-air-fryer/air-fryer.jpeg)
 
 ### Brief about the fryer without oil
 Talking about the features of this air fryer is also very good (compared to the price). The maximum temperature it can reach is about 200 degrees Celsius. 7 bar led display to show temperature and time. There is a capacitive touch button to be able to set the time and temperature. There are pre-installed profiles, for example, to roast chicken, fish, ... will need different temperatures and times. The pot has a capacity of 3.5L inside and 5L outside, very large, so grilling chicken is quite comfortable.
@@ -23,7 +23,7 @@ Talking about the features of this air fryer is also very good (compared to the 
 ### Working principle of oil-free fryer
 If we want to fix it, we must first understand its working principle. Instead of using oil to fry food as usual, an oil-free fryer cooks food by using a heating rod combined with a fan to create a flow of hot air in the pot, rapidly circulating throughout the surface of the food and cook it.
 
-![Working principle of oil-free fryer](https://cdn.tgdd.vn/Files/2018/03/26/1077320/noi-chien-khong-dau-la-gi-co-gi-dac-biet--1.jpg){: style="max-width: 80%"}
+![Working principle of oil-free fryer](/assets/img/posts/diy-smart-air-fryer/what-is-air-fryer.jpeg){: style="max-width: 80%"}
 *Working principle of oil-free fryer*
 
 
@@ -37,7 +37,7 @@ Just take it off first. To access the control board is quite easy, just need a s
 ![Front panel](/assets/img/posts/diy-smart-air-fryer/front-panel.jpg){: style="max-width: 80%"}
 *Front panel*
 
-![Back panel](https://gcdnb.pbrd.co/images/rqqyNxpkBhUU.png?o=1){: style="max-width: 80%"}
+![Back panel](/assets/img/posts/diy-smart-air-fryer/back-panel.jp){: style="max-width: 80%"}
 *Back panel*
 
 After using various operational methods, I have determined that the main component causing the error is the control board. Oops! In this section, I will analyze a bit why it's bad. If normal components fail, I can buy a new one to replace it, but when the control board fails, replacement is not possible. Because the control board contains the program to control the operation of the fryer. So, even if I can buy a new control board, I don't have the program to upload into it to make it run. If an unskilled person encounters this problem, they would give up. But I learned electronics, I am an future engineer, so I see this as an opportunity to learn more.
@@ -50,16 +50,16 @@ My solution is to program a new microcontroller and replace it with the old one.
 ### Let's start!
 First, I will remove the old microcontroller from the board. I don't have a dedicated torch in this section, so some pins have broken copper pins. But I will try to deal with this part later.
 
-![Remove the microcontroller](https://gcdnb.pbrd.co/images/WbYhIDZ6At9H.jpg?o=1){: style="max-width: 80%"}
+![Remove the microcontroller](/assets/img/posts/diy-smart-air-fryer/took-out-mcu.jpeg){: style="max-width: 80%"}
 *Circuit board after removing the microcontroller*
 
 Then solder the wires to the pins of the old microcontroller
 
-![Solder wire](https://gcdnb.pbrd.co/images/0z35MSj1SPQQ.jpg?o=1){: style="max-width: 80%"}
+![Solder wire](/assets/img/posts/diy-smart-air-fryer/soldering-wires.jpeg){: style="max-width: 80%"}
 
 And here is the result!
 
-![And here is the result!](https://gcdnb.pbrd.co/images/w8baCPBH28q8.jpg?o=1){: style="max-width: 80%"}
+![And here is the result!](/assets/img/posts/diy-smart-air-fryer/soldered-wires.jpeg){: style="max-width: 80%"}
 *Circuit board after soldering wire*
 
 Next, I will proceed to use a multimeter to measure and mark the pins. The purpose is to know which pins are connected to which components on the circuit. Some pins will turn on and off the leds, others are used to turn on the heater, and the pins are connected to the temperature sensor.

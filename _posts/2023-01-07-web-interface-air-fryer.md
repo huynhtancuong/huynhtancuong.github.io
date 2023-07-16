@@ -12,7 +12,7 @@ image:
 ### Tại sao lại có cái này?
 Khoảng tầm hè năm 2022 thì mình có mua một cái nồi chiên không dầu của Trung Quốc với giá khá rẻ. Mới đầu về sử dụng khá là ngon, nhưng tầm 2 tháng sau thì nó lăn ra chết, cắm điện không thấy đèn báo hiệu lên nữa. Mình đoán có thể là do mình cắm điện liên tục không rút ra. Nhưng lý do chính chắc là do nó cùi ^^.
 
-![Hình ảnh của chiếc nồi chiên không dầu](https://apptradeinc.com/storage/2022/07/8-16.jpg)
+![Hình ảnh của chiếc nồi chiên không dầu](/assets/img/posts/diy-smart-air-fryer/air-fryer.jpeg)
 
 ### Sơ qua về cái nồi chiên không dầu
 Nói qua về tính năng của chiếc nồi chiên không dầu này thì cũng rất là xịn (so với giá tiền). Nhiệt độ tối đa mà nó có thể đạt đến là khoảng 200 độ C. Màn hình led 7 thanh để hiển thị nhiệt độ và thời gian. Có nút bấm cảm ứng điện dung để có thể cài đặt thời gian và nhiệt độ. Có những profile được cài đặt sẵn, ví dụ như để nướng gà, cá,... thì sẽ cần nhiệt độ và thời gian khác nhau. Nồi có dung tích phần trong là 3.5L và phần ngoài là 5L, rất to, nên nướng gà thì khá là thoải mái. 
@@ -23,7 +23,7 @@ Nói qua về tính năng của chiếc nồi chiên không dầu này thì cũn
 ### Nguyên lý hoạt động của nồi chiên không dầu
 Muốn sửa thì trước hết phải hiểủ nguyên lý hoạt động của nó đã. Thay vì sử dụng dầu để chiên thức ăn như thông thường thì nồi chiên không dầu làm chín thức ăn bằng cách sử dụng thanh gia nhiệt kết hợp với quạt để tạo ra dòng khí nóng trong nồi, luân chuyển nhanh khắp bề mặt của thực phẩm giúp làm chín nó.
 
-![Nguyên lý hoạt động của nồi chiên không dầu](https://cdn.tgdd.vn/Files/2018/03/26/1077320/noi-chien-khong-dau-la-gi-co-gi-dac-biet--1.jpg){: style="max-width: 80%"}
+![Nguyên lý hoạt động của nồi chiên không dầu](/assets/img/posts/diy-smart-air-fryer/what-is-air-fryer.jpeg){: style="max-width: 80%"}
 *Nguyên lý hoạt động của nồi chiên không dầu*
 
 
@@ -37,34 +37,34 @@ Muốn sửa thì trước hết phải hiểủ nguyên lý hoạt động củ
 ![Bảng mạch mặt trước](/assets/img/posts/diy-smart-air-fryer/front-panel.jpg){: style="max-width: 80%"}
 *Bảng mạch mặt trước*
 
-![Bảng mạch mặt sau](https://gcdnb.pbrd.co/images/rqqyNxpkBhUU.png?o=1){: style="max-width: 80%"}
+![Bảng mạch mặt sau](/assets/img/posts/diy-smart-air-fryer/back-panel.jpg){: style="max-width: 80%"}
 *Bảng mạch mặt sau*
 
 Sau một hồi sử dụng các biện pháp nghiệp vụ thì mình đã xác định được linh kiện gây ra lỗi chính là con vi xử lý của nó. Xui vãi! Đoạn này mình sẽ phân tích một chút, tại sao lại xui. Nếu hư những linh kiện bình thường khác thì mình có thể mua cái mới về thay vào, nhưng khi đã hư vi điều khiển thì việc mua về thay thế là điều không thể. Vì bên trong vi điều khiển còn chứa chương trình để điều khiển hoạt động của nồi chiên. Nên nếu có mua được vi điều khiển mới thì mình cũng không có chương trình để nạp vào bên trong cho nó chạy. Nếu bệnh này mà gặp thợ tay non thì cũng chịu chết. Nhưng mình học cơ điện tử mà :)) kỹ sư là nghề của mình, nên mình xem đây là môt cơ hội để học thêm.
 
 Biện pháp của mình là mình sẽ lập trình một con vi điều khiển mới rồi gắn vào thay thế cho con vi điều khiển cũ. May mắn là lúc trước mình có mua một con ESP32, mãi chưa dùng đến, bây giờ thì có việc dùng rồi. Nói sơ qua về con này thì con chip này ngoài các chức năng như mấy con vi điều khiển thông thường thì nó còn hỗ trợ cả WiFi và Bluetooth nữa. Nên mình dự định sẽ thêm vào cả tích năng điều khiển bằng web thông qua WiFi luôn ^^.
 
-![ESP32](https://static.insales-cdn.com/images/products/1/4801/230855361/esp32-wroom-wifi-devkit.1.jpg){: style="max-width: 60%"}
+![ESP32](/assets/img/posts/diy-smart-air-fryer/esp32.jpeg){: style="max-width: 60%"}
 *ESP32*
 
 ### Bắt đầu thôi!
 Đầu tiên là mình sẽ tháo con vi điều khiển cũ ra khỏi bo mạch. Đoạn này mình không có máy khò chuyên dụng nên một số chân pin đã bị đứt phần chân đồng. Nhưng mình sẽ cố gắng xử lý phần này sau.
 
-![Tháo vi điều khiển](https://gcdnb.pbrd.co/images/WbYhIDZ6At9H.jpg?o=1){: style="max-width: 80%"}
+![Tháo vi điều khiển](/assets/img/posts/diy-smart-air-fryer/took-out-mcu.jpeg){: style="max-width: 80%"}
 *Bảng mạch sau khi đã tháo vi điều khiển*
 
 Sau đấy là hàn dây vào những chân của vi điều khiển cũ
 
-![Hàn dây](https://gcdnb.pbrd.co/images/0z35MSj1SPQQ.jpg?o=1){: style="max-width: 80%"}
+![Hàn dây](/assets/img/posts/diy-smart-air-fryer/soldering-wires.jpeg){: style="max-width: 80%"}
 
 Và đây là thành quả!
 
-![Thành quả](https://gcdnb.pbrd.co/images/w8baCPBH28q8.jpg?o=1){: style="max-width: 80%"}
+![Thành quả](/assets/img/posts/diy-smart-air-fryer/soldered-wires.jpeg){: style="max-width: 80%"}
 *Bảng mạch sau khi đã hàn dây*
 
 Tiếp theo thì mình sẽ tiến hành đo và đánh dấu các chân. Mục đích là để biết được chân nào kết nối với thành phần nào trên mạch. Một số chân sẽ phụ trách việc bật tắt đèn led, chân thì dùng để bật bộ gia nhiệt, chân thì kết nối với cảm biến nhiệt độ.
 
-![Tiến hành đánh dấu chân pin](https://gcdnb.pbrd.co/images/Mhbfl3bihVAE.jpg?o=1){: style="max-width: 80%"}
+![Tiến hành đánh dấu chân pin](/assets/img/posts/diy-smart-air-fryer/mark-pins.jpeg){: style="max-width: 80%"}
 *Đánh dấu chân*
 
 Bước sau đó là kết nối dây với chip điều khiển mới.
