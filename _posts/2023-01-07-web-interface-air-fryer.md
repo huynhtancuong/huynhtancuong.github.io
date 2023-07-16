@@ -37,7 +37,7 @@ Muốn sửa thì trước hết phải hiểủ nguyên lý hoạt động củ
 ![Bảng mạch mặt trước](/assets/img/posts/diy-smart-air-fryer/front-panel.jpg){: style="max-width: 80%"}
 *Bảng mạch mặt trước*
 
-![Bảng mạch mặt sau](/assets/img/posts/diy-smart-air-fryer/back-panel.jpg){: style="max-width: 80%"}
+![Bảng mạch mặt sau](/assets/img/posts/diy-smart-air-fryer/back-panel.jpeg){: style="max-width: 80%"}
 *Bảng mạch mặt sau*
 
 Sau một hồi sử dụng các biện pháp nghiệp vụ thì mình đã xác định được linh kiện gây ra lỗi chính là con vi xử lý của nó. Xui vãi! Đoạn này mình sẽ phân tích một chút, tại sao lại xui. Nếu hư những linh kiện bình thường khác thì mình có thể mua cái mới về thay vào, nhưng khi đã hư vi điều khiển thì việc mua về thay thế là điều không thể. Vì bên trong vi điều khiển còn chứa chương trình để điều khiển hoạt động của nồi chiên. Nên nếu có mua được vi điều khiển mới thì mình cũng không có chương trình để nạp vào bên trong cho nó chạy. Nếu bệnh này mà gặp thợ tay non thì cũng chịu chết. Nhưng mình học cơ điện tử mà :)) kỹ sư là nghề của mình, nên mình xem đây là môt cơ hội để học thêm.

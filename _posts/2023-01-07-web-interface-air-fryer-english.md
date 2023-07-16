@@ -37,14 +37,14 @@ Just take it off first. To access the control board is quite easy, just need a s
 ![Front panel](/assets/img/posts/diy-smart-air-fryer/front-panel.jpg){: style="max-width: 80%"}
 *Front panel*
 
-![Back panel](/assets/img/posts/diy-smart-air-fryer/back-panel.jp){: style="max-width: 80%"}
+![Back panel](/assets/img/posts/diy-smart-air-fryer/back-panel.jpeg){: style="max-width: 80%"}
 *Back panel*
 
 After using various operational methods, I have determined that the main component causing the error is the control board. Oops! In this section, I will analyze a bit why it's bad. If normal components fail, I can buy a new one to replace it, but when the control board fails, replacement is not possible. Because the control board contains the program to control the operation of the fryer. So, even if I can buy a new control board, I don't have the program to upload into it to make it run. If an unskilled person encounters this problem, they would give up. But I learned electronics, I am an future engineer, so I see this as an opportunity to learn more.
 
 My solution is to program a new microcontroller and replace it with the old one. Fortunately, I bought an ESP32 before, never used it, now it has a job. Briefly talking about this one, this chip in addition to the functions like conventional microcontrollers, it also supports WiFi and Bluetooth. So I plan to add the web control feature via WiFi too ^^.
 
-![ESP32](https://static.insales-cdn.com/images/products/1/4801/230855361/esp32-wroom-wifi-devkit.1.jpg){: style="max-width: 60%"}
+![ESP32](/assets/img/posts/diy-smart-air-fryer/esp32.jpeg){: style="max-width: 60%"}
 *ESP32*
 
 ### Let's start!
